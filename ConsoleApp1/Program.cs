@@ -10,6 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var Orderprocessor = new Orderprocessor();
+            var Order = new Order { Dateplaced = DateTime.Now, Totalprice = 100f };
+            Orderprocessor.Process(Order);
         }
     }
 }
